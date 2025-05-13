@@ -1,0 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
+using UnityEngine;
+
+public class YellowPotion : Potion
+{
+    public Vector3 FirstPos;
+    
+    
+
+    
+}
