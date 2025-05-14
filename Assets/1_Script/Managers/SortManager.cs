@@ -41,6 +41,7 @@ public class SortManager : MonoBehaviour
                     if (!_currentCylinder.IsEmpty)
                     {
                         SetReadyPotion(_currentCylinder);
+                        Debug.Log("1");
                     }
                 }
                 else
@@ -51,16 +52,34 @@ public class SortManager : MonoBehaviour
                     }
                     else
                     {
-                        if (CheckPotionsType(_currentCylinder, _holdingCylinder))
+                        if(_currentCylinder == _holdingCylinder)
                         {
-                            ControlPotionCount(_currentCylinder, _holdingCylinder);
+                            Debug.Log("Same cylinder");
+                            _holdingCylinder.SetDownPotions(_holdingCylinder.HoldingPotionCount);
+                            _isSelectedCylinder = false;
                         }
                         else
                         {
-                            //holding cylinders potions back down
-                            //current cylinders potions set ready pos
+                            Debug.Log("SSS");
+                            _holdingCylinder.SetDownPotions(_holdingCylinder.HoldingPotionCount);
+                            SetReadyPotion(_currentCylinder);
+                            //if (_currentCylinder.PotionCount != 4)
+                            //{
+                            //    if (CheckPotionsType(_currentCylinder, _holdingCylinder))
+                            //    {
+                            //        ControlPotionCount(_currentCylinder, _holdingCylinder);
+                            //    }
+                            //}
+                            //else
+                            //{
+                            //    _holdingCylinder.SetDownPotions(_holdingCylinder.HoldingPotionCount);
+                            //    SetReadyPotion(_currentCylinder);
+                            //}
+
                         }
                     }
+
+                    
                 }
             }
         }
@@ -75,11 +94,25 @@ public class SortManager : MonoBehaviour
 
     private bool CheckPotionsType(Cylinder firstCyl, Cylinder secondCyl)
     {
-        return firstCyl.GetType() == secondCyl.GetType() ? true : false;
+        return firstCyl.GetFirstPotion().GetType() == secondCyl.GetFirstPotion().GetType() ? true : false;
     }
 
     private void ControlPotionCount(Cylinder firstCyl, Cylinder secondCyl)
     {
+        var transferCount = (4 - firstCyl.PotionCount);
+
+        var holdingCount = _holdingCylinder.HoldingPotionCount;
+
+        if(holdingCount > transferCount)
+        {
+            var downCount = holdingCount - transferCount;
+
+            //transferCount jump potion 
+
+            secondCyl.SetDownPotions(downCount);
+        }
+
+
 
     }
 

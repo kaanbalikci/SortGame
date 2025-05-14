@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-public abstract class Potion : MonoBehaviour
+public class Potion : MonoBehaviour
 {
     private float angleX=6, angleY=4, angleZ=3;
-    public float duration;
+    private float duration;
+
+    public int Index;
 
     void Start()
     {

@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class YellowPotion : Potion
 {
-    public Vector3 FirstPos;
-    
     
 
-    
 }

@@ -558,7 +558,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2024365982023253337}
-  - component: {fileID: 8320546352806514395}
   m_Layer: 0
   m_Name: RedPotion-3
   m_TagString: Untagged
@@ -582,19 +581,6 @@ Transform:
   - {fileID: 7678001750989436149}
   m_Father: {fileID: 2127378678006234696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8320546352806514395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3610352686022849405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9356703f73c870e46a60377a53602415, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0
 --- !u!1 &4825919209519321147
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +590,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3625483144447030306}
-  - component: {fileID: 1856278198731914212}
   m_Layer: 0
   m_Name: RedPotion-2
   m_TagString: Untagged
@@ -628,19 +613,6 @@ Transform:
   - {fileID: 1171417069952648425}
   m_Father: {fileID: 2127378678006234696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1856278198731914212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4825919209519321147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9356703f73c870e46a60377a53602415, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0
 --- !u!1 &4895793300556283011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,7 +1053,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1755111063418350091}
-  - component: {fileID: 5254057710093961976}
   m_Layer: 0
   m_Name: RedPotion-1
   m_TagString: Untagged
@@ -1105,19 +1076,6 @@ Transform:
   - {fileID: 7242680578638260158}
   m_Father: {fileID: 2127378678006234696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5254057710093961976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8459228425676239417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9356703f73c870e46a60377a53602415, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0
 --- !u!1 &8985962325271618695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,7 +1085,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7393626784200777495}
-  - component: {fileID: 4799866306456512433}
   m_Layer: 0
   m_Name: RedPotion-4
   m_TagString: Untagged
@@ -1151,19 +1108,6 @@ Transform:
   - {fileID: 6519424761225956310}
   m_Father: {fileID: 2127378678006234696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4799866306456512433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8985962325271618695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9356703f73c870e46a60377a53602415, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0
 --- !u!1 &9167748126379165432
 GameObject:
   m_ObjectHideFlags: 0
